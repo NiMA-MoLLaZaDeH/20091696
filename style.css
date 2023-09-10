@@ -46,6 +46,13 @@ header, footer{
     background:var(--secbgcolor);
 }
 
+footer{
+    bottom:0;
+    right:0;
+    left: 0;
+    
+}
+
 header{
     padding-top: 2px;
     padding-bottom: 2px;
