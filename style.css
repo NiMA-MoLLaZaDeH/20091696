@@ -14,20 +14,21 @@
     --secadd-color: #03173f;
 }
 
-
 body{
     font-family: cursive;
     background-image: url(1016.jpg);
     color: var(--fontcolor);
     height:auto;
+}
 
+header, footer{
+    text-align: center;
+    background:var(--secbgcolor);
 }
 
 .header-text {
     font-size: 28px;
-    float: left;
 }
-
 
 .home-content{
     font-size: 16px;
@@ -36,21 +37,8 @@ body{
 
 h3{
     font-size: 20px;
-    color: var(--fontcolor);
     border-bottom: 2px solid var(--fontcolor);
     padding-bottom: 2px;
-}
-
-header, footer{
-    text-align: center;
-    background:var(--secbgcolor);
-}
-
-footer{
-    bottom:0;
-    right:0;
-    left: 0;
-    
 }
 
 header{
@@ -64,7 +52,6 @@ header{
     width: 100%;
     top: 0;
     left: 0;
-
 }
 
 section, footer{
@@ -74,10 +61,6 @@ section, footer{
 ul{
     margin: 0;
     list-style-type: none;
-}
-
-b{
-    color: var(--maincolor);
 }
 
 li{
@@ -96,14 +79,6 @@ table{
     width: 70%;
 }
 
-.contact{
-    background-color: transparent;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
-
 td, th{
     border: 1px solid var(--secadd-color);
     padding: 5px;
@@ -112,7 +87,6 @@ td, th{
 .navbar{
     padding: 0.5%;
     width: 50%;
-
 }
 
 .navbar-li{
@@ -120,11 +94,12 @@ td, th{
     margin: 1%;
     padding: 2%;
     border-radius:20px ;
-    transition: 5s;
+    transition: .2s;
 }
 
 .navbar-li:hover{
     display: inline;
+    color: var(--maincolor);
     margin: 1%;
     padding: 2%;
     border-radius:20px ;
@@ -145,10 +120,6 @@ td, th{
     margin-bottom: 10px;
 }
 
-.main{
-    text-align: center;
-}
-
 .navbar-li a:hover{
     text-decoration: underline;
     box-shadow: none;
@@ -156,12 +127,15 @@ td, th{
     transition: 5s;
 }
 
+.main{
+    text-align: center;
+}
+
 form{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-    
+    justify-content: space-evenly;    
 }
 
 label{
@@ -184,7 +158,6 @@ input[type="email"],
 }
 
 input[type="submit"]{
-
     color: var(--additional-color);
     text-transform: uppercase;
     font-weight: 900;
@@ -200,12 +173,10 @@ input[type="submit"]{
     width: 100%;
     position: relative;
     text-decoration: none;
-    display: flex;
-    justify-content: center;
 }
 
 input[type="submit"]:hover{
-    transform: scale(3.1);
+    transform: scale(1.05);
     box-shadow: none;
     background-color: var(--additional-color);
     color: var(--fontcolor);
@@ -226,319 +197,20 @@ input[type="submit"]:hover{
 }
 
 .experience{
-  margin-top: 100px;
-  margin-left: 200px;
-  margin-right: 200px;
-  height:40vh;
-  background-color: var(--secbgcolor);
-  text-align: center;
-  align-items: center;
-  border-radius: 15px;
-  margin-bottom: 8%;
-}
-
-.ex{
-  display: inline;
-  background-color: #03173f;
-  margin: 2%;
-  width: 35%;
-}
-
-.box-1{
-  border:2px dashed var(--text4);
-  padding:9%;
-  box-shadow: 0 0 1.5rem var(--text2);
-  width: 24%;
-  float:right;
-  margin-right: 5%;
-  margin-bottom: 5%;
-  background-color: var(--secadd-color);
-  border-radius:12px ;
-}
-
-
-
-.big-text{
-  margin-bottom: 5%;
-  color: var(--maincolor);
-  font-weight:bold;
-}
-
-/* singup//////////////////////////////////////////////////////////////////////////////////////// */
-
-.htmll{
-  height:4.8vh;
-}
-
-.h2{
-  padding-top: 2px;
-  padding-bottom: 2px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 100%;
-  top: 0;
-  left: 0;
-
-}
-  
-  .login-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 400px;
-    padding: 40px;
-    transform: translate(-50%, -50%);
-    background:#03173f72;
-    box-shadow: 0px 0px 30px #5C5696;
-    box-sizing: border-box;
-    box-shadow: 0 15px 25px rgba(0,0,0,.6);
-    border-radius: 10px;
-    margin-top: 10%;
-    backdrop-filter: blur(10px);
-  }
-  
-  .login-box h2 {
-    margin: 0 0 30px;
-    padding: 0;
-    color:var(--bgcolor);
+    margin-top: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
+    height:40vh;
+    background-color: var(--secbgcolor);
     text-align: center;
-  }
-  
-  .login-box .user-box {
-    position: relative;
-  }
-  
-
-  .login-box .user-box  {
-    width: 100%;
-    padding: 10px 0;
-    font-size: 16px;
-    color:var(--bgcolor);
-    margin-bottom: 10px;
-    border: none;
-    outline: none;
-    background-color:transparent;
+    align-items: center;
+    border-radius: 15px;
+    margin-bottom: 8%;
   }
 
-  .user-box2  {
-    width: 100%;
-    padding: 10px 0;
-    font-size: 16px;
-    color:var(--bgcolor);
-    margin-bottom: 10px;
-    border: none;
-    outline: none;
-    background-color:transparent;
-    border-bottom: 2px solid var(--bgcolor);
-  }
-
-  .login-box .user-box label {
-    position: absolute;
-    top:0;
-    left: 0;
-    padding: 10px 0;
-    font-size: 16px;
-    color: #fff;
-    pointer-events: none;
-    transition: .5s;
-  }
-  
-  .login-box .user-box input:focus ~ label,
-  .login-box .user-box input:valid ~ label {
-    top: -20px;
-    left: 0;
-    color:var(--bgcolor);
-    font-size: 12px;
-  }
-  
-  .login-box form a {
-    position: relative;
-    display: inline-block;
-    padding: 10px 20px;
-    color: #03e9f4;
-    font-size: 16px;
-    text-decoration: none;
-    text-transform: uppercase;
-    overflow: hidden;
-    transition: .5s;
-    margin-top: 40px;
-    letter-spacing: 4px
-  }
-  
-  .login-box a:hover {
-    background: #03e9f4;
-    color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 5px #03e9f4,
-                0 0 25px #03e9f4,
-                0 0 50px #03e9f4,
-                0 0 100px #03e9f4;
-  }
-  
-  .login-box a span {
-    position: absolute;
-    display: block;
-  }
-  
-  .login-box a span:nth-child(1) {
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, #00ff80);
-    animation: btn-anim1 1s linear infinite;
-  }
-  
-  @keyframes btn-anim1 {
-    0% {
-      left: -100%;
-    }
-    50%,100% {
-      left: 100%;
-    }
-  }
-  
-  .login-box a span:nth-child(2) {
-    top: -100%;
-    right: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(180deg, transparent, #031ff4);
-    animation: btn-anim2 1s linear infinite;
-    animation-delay: .25s
-  }
-  
-  @keyframes btn-anim2 {
-    0% {
-      top: -100%;
-    }
-    50%,100% {
-      top: 100%;
-    }
-  }
-  
-  .login-box a span:nth-child(3) {
-    bottom: 0;
-    right: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(270deg, transparent, #7207a3);
-    animation: btn-anim3 1s linear infinite;
-    animation-delay: .5s
-  }
-  
-  @keyframes btn-anim3 {
-    0% {
-      right: -100%;
-    }
-    50%,100% {
-      right: 100%;
-    }
-  }
-  
-  .login-box a span:nth-child(4) {
-    bottom: -100%;
-    left: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(360deg, transparent, #f4c403);
-    animation: btn-anim4 1s linear infinite;
-    animation-delay: .75s
-  }
-  
-  @keyframes btn-anim4 {
-    0% {
-      bottom: -100%;
-    }
-    50%,100% {
-      bottom: 100%;
-    }
-  }
-  
-  .shape:first-child{
-    background: linear-gradient(
-        #1845ad,
-        #23a2f6
-    );
-    left: -70px;
-    top: 120px;
-}
-.shape:last-child{
-    background: linear-gradient(
-        to right,
-        #ff512f,
-        #f09819
-    );
-    right: -50px;
-    bottom: -120px;
+footer ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.background{
-  width: 430px;
-  height: 520px;
-  position: absolute;
-  transform: translate(-50%,-50%);
-  left: 50%;
-  top: 50%;
-}
-.background .shape{
-  height: 200px;
-  width: 200px;
-  position: absolute;
-  border-radius:50%;
-}
-
-/* media */
-
-@media (max-width: 800px){
-    .login-box {
-    width:80vh;
-    margin-top: 30%;
-  }
-  ul{
-    display: none;
-  }
-  .home{
-    width: 60vh;
-    text-align: center;
-  }
-  .experience{
-    
-  }
-}
-
-/* 122 */
-.shape3:first-child{
-  background: linear-gradient(
-      #1845ad,
-      #23a2f6
-  );
-  left: -235px;
-  top: 140px;
-}
-.shape3:last-child{
-  background: linear-gradient(
-      to right,
-      #ff512f,
-      #f09819
-  );
-  left: -235px;
-  top: 480px;
-}
-
-.background3{
-width: 430px;
-height: 520px;
-position: absolute;
-transform: translate(-50%,-50%);
-left: 50%;
-top: 50%;
-}
-.background3 .shape3{
-height: 50px;
-width: 50px;
-position: absolute;
-border-radius:50%;
-}
